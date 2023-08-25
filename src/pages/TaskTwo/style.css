@@ -1,0 +1,80 @@
+.cas-task-two {
+  width: 500px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: ce;
+  gap: 30px;
+}
+
+.cas-task-two__box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.cas-task-two__card-wrapper {
+  background-color: transparent;
+  width: 80px;
+  height: 120px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+}
+
+.cas-task-two__card {
+  border: 1px solid var(--blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+}
+
+.cas-task-two__card__front,
+.cas-task-two__card__back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backface-visibility: hidden;
+}
+
+.cas-task-two__card-wrapper:hover .cas-task-two__card {
+  transform: rotateY(180deg);
+}
+
+.cas-task-two__card__front {
+  transform: rotateY(180deg);
+  background-color: var(--green);
+}
+
+.cas-task-two__card__back {
+  background-color: var(--blue);
+  color: white;
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.cas-task-two__circle {
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--orange);
+  background-color: var(--orange);
+  border-radius: 50%;
+}
+
+.cas-task-two__square {
+  width: 40px;
+  height: 40px;
+  border: 1px solid white;
+  background-color: white;
+}

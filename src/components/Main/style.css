@@ -1,0 +1,5 @@
+.cas-main {
+  width: 100%;
+  height: calc(100vh - 100px);
+  padding: 8px 16px;
+}

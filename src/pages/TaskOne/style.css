@@ -1,0 +1,10 @@
+.cas-task-one {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-style: italic;
+  font-size: 22px;
+  border: 1px solid var(--blue);
+  width: 400px;
+  height: 120px;
+}
